@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class MemberCard extends Component {
   render() {
     return (
-      <div className="three columns">
+      <div className="four columns" style={{margin: '0'}}>
         <div className="card">
           <img
             src={this.props.img}

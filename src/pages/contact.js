@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+import ToastService from "react-material-toast";
+
+const toast = ToastService.new({
+  place: "topRight",
+  duration: 2000,
+  maxCount: 2000,
+});
 
 class ContactPage extends Component {
   handleSubmit = () => {
-    console.log("yoz");
+    toast.success("Your message was sent successfully.");
   };
 
   render() {
@@ -26,6 +33,7 @@ class ContactPage extends Component {
                 id="name"
                 placeholder="Coder anonymous"
                 required
+                style={{ backgroundColor: "#222", borderColor: "#222" }}
               />
             </div>
             <div className="six columns">
@@ -36,6 +44,7 @@ class ContactPage extends Component {
                 id="email"
                 placeholder="coder@anonymous.org"
                 required
+                style={{ backgroundColor: "#222", borderColor: "#222" }}
               />
             </div>
           </div>
