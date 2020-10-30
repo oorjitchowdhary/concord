@@ -1,43 +1,45 @@
-import React, { Component } from 'react';
-import MemberCard from '../components/member';
+import React, { Component } from "react";
 
 class AboutPage extends Component {
-    render() {
-        return (
-            <>
-            <h1>About</h1>
+  render() {
+    return (
+      <div id="about" style={{ minHeight: "100vh" }}>
+        <div className="row">
+          <div className="six columns" style={{ margin: "12px 0" }}>
+            <img src="assets/box.png" alt="box" height="300" width="400" />
+          </div>
+          <div className="six columns" style={{ margin: "4% 0" }}>
+            <h2>The packaging redesigned</h2>
+            <br />
             <p>
-            To be changed<br/><br/>
-            After buying a notebook, people either store their notebook package
-            long enough and then throw it away or they throw it away as soon as
-            they get it. This cause a huge burden on the environment, giving
-            rise to waste and energy management problems.
-            <br /><br/>
-            The current Dell Notebook packages are curbside recyclable; however,
-            people do not take the initiative to recycle it because of a
-            plethora of reasons including, but not limited to: lack of
-            incentives, comfort, and space. This, in turn, leads to unnecessary
-            dumping of non-biodegradable materials in the landfill sites, hence
-            nullifying the whole purpose of making it recyclable.
-            <br /><br/>
-            The e-commerce platforms are flourishing with sales more than ever
-            before but with e-commerce comes the problem of returns and repairs
-            as well which are logistical nightmares for them.
-            <br /><br/>
-            Despite all precautions the fact of the matter is electronics are
-            fragile products which have a significant chance of getting damaged
-            during transits.
-          </p>
-          <h2>Meet the team</h2>
-          <MemberCard name="Ansh Deo Singh" img="https://techsyndicate.co/assets/alumni/anshdeosingh.jpg" role="Coach"/>
-          <MemberCard name="Rachit Gupta" img="https://github.com/dotrachit.png" role="Member"/>
-          <MemberCard name="Ansh Talwar" img="https://i.imgur.com/qZbqean.jpg" role="Member"/>
-          <MemberCard name="Oorjit Chowdhary" img="https://github.com/oorjitchowdhary.png" role="Member"/>
-          <MemberCard name="Jai Madhukar" img="https://github.com/Jai-17.png" role="Member"/>
-          <MemberCard name="Hitarth Khurana" img="https://i.imgur.com/1zCBgDg.jpg" role="Member"/>
-          </>
-        );
-    }
+              Boxes are not something that one would relate with to innovate on.
+              But we, at Concord, have done the impossible. We have come up with
+              a totally new and radical design for the packaging of notebooks
+              governed by the principles of sustainability economy, society, and
+              the environment, with emphasis on safety and security of the
+              valuable piece of technology.
+            </p>
+          </div>
+        </div>
+        <div className="row">
+          <div className="six columns" style={{ margin: "4% 0" }}>
+            <h2>Why</h2>
+            <br />
+            <p>
+              People who use notebooks often feel the need to buy various
+              accessories to make their working life more comfortable and
+              productive. This has been heightened by the current situation in
+              the world when all sorts of accessories are being bought by
+              employees working from home to increase their efficiency.
+            </p>
+          </div>
+          <div className="six columns">
+            <img src="assets/box.png" alt="box" height="300" width="400" style={{margin: 'auto'}}/>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default AboutPage;

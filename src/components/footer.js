@@ -6,7 +6,7 @@ class Footer extends Component {
       <div className="footer">
         <hr />
         <div className="footer-text">
-          coinraiders
+        &copy; Concord | 2020
         </div>
       </div>
     );
