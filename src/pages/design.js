@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Iframe from "react-iframe";
 
 class DesignPage extends Component {
   render() {
