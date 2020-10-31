@@ -17,7 +17,7 @@ class IndexPage extends Component {
       >
         <div style={{fontSize: '84px', fontWeight: 'bold'}}>Concord</div>
         <h5>A scientific redesign of the Dell Notebook packaging</h5><br/>
-        <a href="#design"><button className="button-primary" style={{fontSize: '18px'}}>Learn More</button></a>
+        <a href="#about"><button className="button-primary" style={{fontSize: '18px'}}>Learn More</button></a>
       </div>
     );
   }

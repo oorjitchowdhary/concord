@@ -3,13 +3,19 @@ import React, { Component } from "react";
 class AboutPage extends Component {
   render() {
     return (
-      <div id="about" style={{ minHeight: "100vh" }}>
+      <div style={{ minHeight: "100vh", height: '100%' }}>
         <div className="row">
-          <div className="six columns" style={{ margin: "12px 0" }}>
-            <img src="assets/box.png" alt="box" height="300" width="400" />
+          <div className="six columns" style={{ margin: "28px 0" }}>
+            <img
+              src="assets/box.png"
+              alt="box"
+              width="420"
+              height="auto"
+              style={{ margin: "0" }}
+            />
           </div>
           <div className="six columns" style={{ margin: "4% 0" }}>
-            <h2>The packaging redesigned</h2>
+            <h2 id="about">The packaging redesigned</h2>
             <br />
             <p>
               Boxes are not something that one would relate with to innovate on.
@@ -34,7 +40,11 @@ class AboutPage extends Component {
             </p>
           </div>
           <div className="six columns">
-            <img src="assets/box.png" alt="box" height="300" width="400" style={{margin: 'auto'}}/>
+            <img
+              src="assets/stand.png"
+              alt="stand"
+              style={{ margin: "auto" }}
+            />
           </div>
         </div>
       </div>
