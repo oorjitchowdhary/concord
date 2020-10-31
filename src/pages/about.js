@@ -5,13 +5,12 @@ class AboutPage extends Component {
     return (
       <div style={{ minHeight: "100vh", height: '100%' }}>
         <div className="row">
-          <div className="six columns" style={{ margin: "28px 0" }}>
+          <div className="six columns" style={{ margin: "6% 0 5% -2%" }}>
             <img
               src="assets/box.png"
               alt="box"
               width="420"
               height="auto"
-              style={{ margin: "0" }}
             />
           </div>
           <div className="six columns" style={{ margin: "4% 0" }}>

@@ -2,6 +2,23 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 class IndexPage extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      video: "none",
+    };
+    this.playVideo = this.playVideo.bind(this);
+    this.closeVideo = this.closeVideo.bind(this);
+  }
+
+  playVideo() {
+    this.setState({ video: "block" });
+  }
+
+  closeVideo() {
+    this.setState({ video: "none" });
+  }
+
   render() {
     return (
       <>
@@ -29,15 +46,28 @@ class IndexPage extends Component {
             <span />
           </Link>
         </div>
-        <div id="video-overlay" className="video-overlay">
+        <div
+          style={{
+            display: this.state.video,
+            position: "fixed",
+            width: "100%",
+            height: "100%",
+            top: "0",
+            left: "0",
+            zIndex: "10",
+            backgroundColor: "rgba(0,0,0,0.5)",
+            padding: "10% 0",
+          }}
+          onClick={this.closeVideo}
+        >
           <iframe
             src="https://www.youtube.com/embed/YGPJVLi3aM4"
             title="video"
+            width="854"
+            height="480"
             allowFullScreen
-          />
-          <Link className="video-overlay-close" to="/">
-            &times;
-          </Link>
+            style={{ display: "block", margin: "auto" }}
+          ></iframe>
         </div>
       </>
     );
