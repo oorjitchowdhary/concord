@@ -21,39 +21,54 @@ class DesignPage extends Component {
             consumers often shell out extra cash for. Thus, people won't have to
             throw their package away instantly.
           </p>
+          <div className="mobile-only">
+            <div className="two columns">
+              <img
+                src="assets/box.png"
+                alt="box"
+                className="u-max-full-width"
+              />
+            </div>
+            <div className="two columns">
+              <img
+                src="assets/stack.png"
+                alt="stack"
+                className="u-max-full-width"
+              />
+            </div>
+            <div className="two columns">
+              <img
+                src="assets/holder.png"
+                alt="holder"
+                className="u-max-full-width"
+              />
+            </div>
+            <div className="two columns">
+              <img
+                src="assets/stand.png"
+                alt="stand"
+                className="u-max-full-width"
+              />
+            </div>
+            <div className="two columns">
+              <img
+                src="assets/box-template.png"
+                alt="box template"
+                className="u-max-full-width"
+              />
+            </div>
+          </div>
         </div>
+        <img
+          src="assets/3d.png"
+          alt="renders"
+          width="100%"
+          height="auto"
+          className="web-only"
+        />
       </div>
     );
   }
 }
 
 export default DesignPage;
-
-{/* <div className="two columns">
-<img
-  src="assets/box-template.png"
-  alt="box template"
-  className="u-max-full-width"
-/>
-</div>
-<div className="four columns">
-<img
-  src="assets/holder.png"
-  alt="holder"
-  className="u-max-full-width"
-/>
-</div>
-<div className="four columns">
-<img
-  src="assets/stack.png"
-  alt="stack"
-  className="u-max-full-width"
-/>
-</div>
-<iframe
-src="https://www.youtube.com/embed/YGPJVLi3aM4"
-width="854"
-height="480"
-title="demo"
-allowFullScreen
-/> */}

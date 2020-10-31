@@ -4,7 +4,7 @@ import MemberCard from "../components/member";
 class Team extends Component {
   render() {
     return (
-      <div id="team" style={{ minHeight: "100vh", height: '100%' }}>
+      <div id="team" style={{ minHeight: "100vh", height: "100%" }}>
         <div className="row" style={{ minHeight: "100vh" }}>
           <h2>Meet the team</h2>
           <p>
