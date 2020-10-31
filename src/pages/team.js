@@ -13,11 +13,6 @@ class Team extends Component {
             Conrad Challenge.
           </p>
           <MemberCard
-            name="Ansh Deo Singh"
-            img="https://techsyndicate.co/assets/alumni/anshdeosingh.jpg"
-            role="Coach"
-          />
-          <MemberCard
             name="Rachit Gupta"
             img="https://github.com/dotrachit.png"
             role="Member"

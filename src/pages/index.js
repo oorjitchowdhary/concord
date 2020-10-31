@@ -6,17 +6,18 @@ class IndexPage extends Component {
     super(props);
     this.state = {
       video: "none",
+      url: "https://www.youtube.com/embed/YGPJVLi3aM4"
     };
     this.playVideo = this.playVideo.bind(this);
     this.closeVideo = this.closeVideo.bind(this);
   }
 
   playVideo() {
-    this.setState({ video: "block" });
+    this.setState({ video: "block", url: "https://www.youtube.com/embed/YGPJVLi3aM4" });
   }
 
   closeVideo() {
-    this.setState({ video: "none" });
+    this.setState({ video: "none", url: "" });
   }
 
   render() {
@@ -31,10 +32,11 @@ class IndexPage extends Component {
             textAlign: "center",
             height: "100vh",
             display: "block",
+            margin: "auto",
             padding: "15%",
           }}
         >
-          <div style={{ fontSize: "84px", fontWeight: "bold" }}>Concord</div>
+          <div style={{ fontSize: "10vh", fontWeight: "bold" }}>Concord</div>
           <h5>A scientific redesign of the Dell Notebook packaging</h5>
           <br />
           <Link
@@ -61,7 +63,7 @@ class IndexPage extends Component {
           onClick={this.closeVideo}
         >
           <iframe
-            src="https://www.youtube.com/embed/YGPJVLi3aM4"
+            src={this.state.url}
             title="video"
             width="854"
             height="480"
