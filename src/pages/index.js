@@ -13,7 +13,7 @@ class IndexPage extends Component {
   }
 
   playVideo() {
-    this.setState({ video: "block", url: "https://www.youtube.com/embed/YGPJVLi3aM4" });
+    this.setState({ video: "block", url: "https://www.youtube.com/embed/1A9Yn9bIPPQ" });
   }
 
   closeVideo() {
